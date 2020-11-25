@@ -212,6 +212,7 @@ function BuildFileList() {
       ################################
       FILE_ARRAY_BASH+=("${FILE}")
       FILE_ARRAY_BASH_EXEC+=("${FILE}")
+      FILE_ARRAY_JSCPD+=("${FILE}")
       FILE_ARRAY_SHELL_SHFMT+=("${FILE}")
 
     #########################
@@ -223,6 +224,7 @@ function BuildFileList() {
       # Append the file to the array #
       ################################
       FILE_ARRAY_CLOJURE+=("${FILE}")
+      FILE_ARRAY_JSCPD+=("${FILE}")
 
     ########################
     # Get the COFFEE files #
@@ -232,6 +234,7 @@ function BuildFileList() {
       # Append the file to the array #
       ################################
       FILE_ARRAY_COFFEESCRIPT+=("${FILE}")
+      FILE_ARRAY_JSCPD+=("${FILE}")
 
     ########################
     # Get the CSHARP files #
@@ -241,6 +244,7 @@ function BuildFileList() {
       # Append the file to the array #
       ################################
       FILE_ARRAY_CSHARP+=("${FILE}")
+      FILE_ARRAY_JSCPD+=("${FILE}")
 
     #####################
     # Get the CSS files #
@@ -251,6 +255,7 @@ function BuildFileList() {
       # Append the file to the array #
       ################################
       FILE_ARRAY_CSS+=("${FILE}")
+      FILE_ARRAY_JSCPD+=("${FILE}")
 
     ######################
     # Get the DART files #
@@ -260,6 +265,7 @@ function BuildFileList() {
       # Append the file to the array #
       ################################
       FILE_ARRAY_DART+=("${FILE}")
+      FILE_ARRAY_JSCPD+=("${FILE}")
 
     ########################
     # Get the DOCKER files #
@@ -272,6 +278,7 @@ function BuildFileList() {
       ################################
       FILE_ARRAY_DOCKERFILE+=("${FILE}")
       FILE_ARRAY_DOCKERFILE_HADOLINT+=("${FILE}")
+      FILE_ARRAY_JSCPD+=("${FILE}")
 
     #####################
     # Get the ENV files #
@@ -290,6 +297,7 @@ function BuildFileList() {
       # Append the file to the array #
       ################################
       FILE_ARRAY_GHERKIN+=("${FILE}")
+      FILE_ARRAY_JSCPD+=("${FILE}")
 
     ########################
     # Get the Golang files #
@@ -299,6 +307,7 @@ function BuildFileList() {
       # Append the file to the array #
       ################################
       FILE_ARRAY_GO+=("${FILE}")
+      FILE_ARRAY_JSCPD+=("${FILE}")
 
     ########################
     # Get the GROOVY files #
@@ -309,6 +318,7 @@ function BuildFileList() {
       # Append the file to the array #
       ################################
       FILE_ARRAY_GROOVY+=("$FILE")
+      FILE_ARRAY_JSCPD+=("${FILE}")
 
     ######################
     # Get the HTML files #
@@ -318,6 +328,7 @@ function BuildFileList() {
       # Append the file to the array #
       ##############################p##
       FILE_ARRAY_HTML+=("${FILE}")
+      FILE_ARRAY_JSCPD+=("${FILE}")
 
     ######################
     # Get the Java files #
@@ -327,6 +338,7 @@ function BuildFileList() {
       # Append the file to the array #
       ################################
       FILE_ARRAY_JAVA+=("${FILE}")
+      FILE_ARRAY_JSCPD+=("${FILE}")
 
     ############################
     # Get the JavaScript files #
@@ -337,7 +349,8 @@ function BuildFileList() {
       ################################
       FILE_ARRAY_JAVASCRIPT_ES+=("${FILE}")
       FILE_ARRAY_JAVASCRIPT_STANDARD+=("${FILE}")
-      FILE_ARRAY_JAVASCRIPT_PRETTIER+=("${FILE}")
+      FILE_ARRAY_JSCPD+=("${FILE}")
+
 
     ######################
     # Get the JSON files #
@@ -347,16 +360,8 @@ function BuildFileList() {
       # Append the file to the array #
       ################################
       FILE_ARRAY_JSON+=("${FILE}")
+      FILE_ARRAY_JSCPD+=("${FILE}")
 
-      ############################
-      # Check if file is Ansible #
-      ############################
-      if DetectAnsibleFile "${ANSIBLE_DIRECTORY}" "${FILE}"; then
-        ################################
-        # Append the file to the array #
-        ################################
-        FILE_ARRAY_ANSIBLE+=("${FILE}")
-      fi
       ############################
       # Check if file is OpenAPI #
       ############################
@@ -401,6 +406,7 @@ function BuildFileList() {
       ################################
       # Append the file to the array #
       ################################
+      FILE_ARRAY_JSCPD+=("${FILE}")
       FILE_ARRAY_JSX+=("${FILE}")
 
     ########################
@@ -410,6 +416,7 @@ function BuildFileList() {
       ################################
       # Append the file to the array #
       ################################
+      FILE_ARRAY_JSCPD+=("${FILE}")
       FILE_ARRAY_KOTLIN+=("${FILE}")
 
     #####################
@@ -419,6 +426,7 @@ function BuildFileList() {
       ################################
       # Append the file to the array #
       ################################
+      FILE_ARRAY_JSCPD+=("${FILE}")
       FILE_ARRAY_LUA+=("$FILE")
 
     #######################
@@ -428,6 +436,7 @@ function BuildFileList() {
       ################################
       # Append the file to the array #
       ################################
+      FILE_ARRAY_JSCPD+=("${FILE}")
       FILE_ARRAY_LATEX+=("${FILE}")
 
     ##########################
@@ -437,6 +446,7 @@ function BuildFileList() {
       ################################
       # Append the file to the array #
       ################################
+      FILE_ARRAY_JSCPD+=("${FILE}")
       FILE_ARRAY_MARKDOWN+=("${FILE}")
 
     ######################
@@ -446,6 +456,7 @@ function BuildFileList() {
       ################################
       # Append the file to the array #
       ################################
+      FILE_ARRAY_JSCPD+=("${FILE}")
       FILE_ARRAY_PHP_BUILTIN+=("${FILE}")
       FILE_ARRAY_PHP_PHPCS+=("${FILE}")
       FILE_ARRAY_PHP_PHPSTAN+=("${FILE}")
@@ -459,6 +470,7 @@ function BuildFileList() {
       ################################
       # Append the file to the array #
       ################################
+      FILE_ARRAY_JSCPD+=("${FILE}")
       FILE_ARRAY_PERL+=("${FILE}")
 
     ############################
@@ -474,6 +486,7 @@ function BuildFileList() {
       ################################
       # Append the file to the array #
       ################################
+      FILE_ARRAY_JSCPD+=("${FILE}")
       FILE_ARRAY_POWERSHELL+=("${FILE}")
 
     #################################
@@ -483,6 +496,7 @@ function BuildFileList() {
       ################################
       # Append the file to the array #
       ################################
+      FILE_ARRAY_JSCPD+=("${FILE}")
       FILE_ARRAY_PROTOBUF+=("${FILE}")
 
     ########################
@@ -492,6 +506,7 @@ function BuildFileList() {
       ################################
       # Append the file to the array #
       ################################
+      FILE_ARRAY_JSCPD+=("${FILE}")
       FILE_ARRAY_PYTHON_BLACK+=("${FILE}")
       FILE_ARRAY_PYTHON_PYLINT+=("${FILE}")
       FILE_ARRAY_PYTHON_FLAKE8+=("${FILE}")
@@ -515,6 +530,7 @@ function BuildFileList() {
       ################################
       # Append the file to the array #
       ################################
+      FILE_ARRAY_JSCPD+=("${FILE}")
       FILE_ARRAY_R+=("${FILE}")
 
     ######################
@@ -524,6 +540,7 @@ function BuildFileList() {
       ################################
       # Append the file to the array #
       ################################
+      FILE_ARRAY_JSCPD+=("${FILE}")
       FILE_ARRAY_RUBY+=("${FILE}")
 
     ###########################
@@ -542,7 +559,8 @@ function BuildFileList() {
     elif [ "${FILE_TYPE}" == "sql" ]; then
       ################################
       # Append the file to the array #
-      ##############################p##
+      ################################
+      FILE_ARRAY_JSCPD+=("${FILE}")
       FILE_ARRAY_SQL+=("${FILE}")
 
     ###########################
@@ -571,6 +589,7 @@ function BuildFileList() {
       ################################
       # Append the file to the array #
       ################################
+      FILE_ARRAY_JSCPD+=("${FILE}")
       FILE_ARRAY_TYPESCRIPT_ES+=("${FILE}")
       FILE_ARRAY_TYPESCRIPT_STANDARD+=("${FILE}")
 
@@ -581,6 +600,7 @@ function BuildFileList() {
       ################################
       # Append the file to the array #
       ################################
+      FILE_ARRAY_JSCPD+=("${FILE}")
       FILE_ARRAY_TSX+=("${FILE}")
 
     #####################
@@ -590,6 +610,7 @@ function BuildFileList() {
       ################################
       # Append the file to the array #
       ################################
+      FILE_ARRAY_JSCPD+=("${FILE}")
       FILE_ARRAY_XML+=("${FILE}")
 
     ################################
@@ -599,6 +620,7 @@ function BuildFileList() {
       ################################
       # Append the file to the array #
       ################################
+      FILE_ARRAY_JSCPD+=("${FILE}")
       FILE_ARRAY_YAML+=("${FILE}")
 
       ############################
